@@ -6,5 +6,6 @@ public interface UserRepository {
 	
 	
 	public boolean createUser(User user);
+	public boolean ValidateLogin(String username, String password);
 
 }

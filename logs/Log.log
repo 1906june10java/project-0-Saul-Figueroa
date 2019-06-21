@@ -1,3 +1,34 @@
 2019-06-20 11:18:42 INFO  ConnectionUtil:40 - Connection successful
 2019-06-20 17:38:17 INFO  ConnectionUtil:40 - Connection successful
 2019-06-20 17:39:16 TRACE UserRepositoryJDBC:18 - Entering, create new user User [id=2, fisrtName=Anyeli, lastName=Figueroa, username=cham2008, password=g1gu3r04A@]
+2019-06-20 20:41:56 TRACE UserRepositoryJDBC:18 - Entering, create new user User [id=1, fisrtName=Saul, lastName=Flores, username=saul123, password=p4ssw0rd]
+2019-06-20 20:41:58 ERROR UserRepositoryJDBC:37 - Could not create the user java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (BANK_DB.PK_USERS) violated
+
+2019-06-20 20:44:54 TRACE UserRepositoryJDBC:18 - Entering, create new user User [id=3, fisrtName=Figueroa, lastName=Flores, username=figuea, password=12345]
+2019-06-20 22:40:48 TRACE UserRepositoryJDBC:18 - Entering, create new user User [id=4, fisrtName=Leslye, lastName=Figueroa, username=lesfigue, password=123qwe]
+2019-06-20 22:40:50 TRACE UserRepositoryJDBC:33 - User inserted successfully
+2019-06-21 08:52:04 TRACE UserRepositoryJDBC:47 - Entering, valiadte login with parameters SAULEFF 1357
+2019-06-21 08:52:05 TRACE UserRepositoryJDBC:65 - Incorrect username or password, please verify
+2019-06-21 08:53:37 TRACE UserRepositoryJDBC:19 - Entering, create new user User [id=4, fisrtName=SAULEFF, lastName=1357, username=FIGUE123, password=123]
+2019-06-21 08:53:37 ERROR UserRepositoryJDBC:39 - Could not create the user java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (BANK_DB.PK_USERS) violated
+
+2019-06-21 08:53:48 TRACE UserRepositoryJDBC:47 - Entering, valiadte login with parameters SAULEFF 1357
+2019-06-21 08:53:48 TRACE UserRepositoryJDBC:65 - Incorrect username or password, please verify
+2019-06-21 08:55:00 TRACE UserRepositoryJDBC:47 - Entering, valiadte login with parameters SAULEFF 1357
+2019-06-21 08:55:01 TRACE UserRepositoryJDBC:60 - Login successfully
+2019-06-21 08:57:31 TRACE UserRepositoryJDBC:47 - Entering, valiadte login with parameters sauleff 1357
+2019-06-21 08:59:05 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters sauleff 1357
+2019-06-21 09:00:41 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters sauleff 1357
+2019-06-21 09:01:50 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 09:01:51 TRACE UserRepositoryJDBC:60 - Login successfully
+2019-06-21 09:02:15 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 09:02:16 TRACE UserRepositoryJDBC:60 - Login successfully
+2019-06-21 10:47:54 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 123
+2019-06-21 10:48:25 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 10:48:25 TRACE UserRepositoryJDBC:60 - Login successfully
+2019-06-21 10:56:42 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 10:56:44 TRACE UserRepositoryJDBC:60 - Login successfully
+2019-06-21 11:06:12 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 11:06:14 TRACE UserRepositoryJDBC:68 - Incorrect username or password, please verify
+2019-06-21 11:06:55 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 11:06:57 TRACE UserRepositoryJDBC:62 - Login successfully

@@ -1,7 +1,5 @@
 package com.revature.model;
 
-import java.util.ArrayList;
-
 public class User {
 	
 	private long id;

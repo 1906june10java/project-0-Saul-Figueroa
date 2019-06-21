@@ -2,6 +2,7 @@ package com.revature.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.apache.log4j.Logger;
@@ -30,11 +31,43 @@ public class UserRepositoryJDBC implements UserRepository{
 			statement.setString(++parameterIndex, user.getPassword());
 			
 			if (statement.executeUpdate() > 0) {
+				LOGGER.trace("User inserted successfully");
 				return true;
 			}
 			
 		} catch (SQLException e) {
 			LOGGER.error("Could not create the user "+e);
+		}
+		
+		return false;
+	}
+
+	@Override
+	public boolean ValidateLogin(String username, String password) {
+		LOGGER.trace("Entering, validate login with parameters "+username+" "+password);
+		int parameterIndex =0;
+		try(Connection connection = ConnectionUtil.getConnection())
+		{
+			String sql ="SELECT * FROM USERS WHERE U_USERNAME = ? and U_PIN =?";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			
+			statement.setString(++parameterIndex, username);
+			statement.setString(++parameterIndex, password);
+			
+			ResultSet result = statement.executeQuery();
+			
+			
+			
+			if (result.next()) {
+				LOGGER.trace("Login successfully");
+				return true;
+			}
+			//Return the ID to insert it in the account
+			long id =result.getLong(1);
+			System.out.println("ID" +id);
+			
+		} catch (SQLException e) {
+			LOGGER.trace("Incorrect username or password, please verify");
 		}
 		
 		return false;

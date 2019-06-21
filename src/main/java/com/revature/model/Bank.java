@@ -1,12 +1,11 @@
 package com.revature.model;
 
-import java.util.ArrayList;
 
+//As I'm not creating banks, I do not need this class for the current implementation
 public class Bank {
 	
 	private String name;
-	private ArrayList<User> users;
-	private ArrayList<Account> accounts;
+	
 	
 	
 
