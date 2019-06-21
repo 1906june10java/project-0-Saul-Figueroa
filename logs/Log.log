@@ -32,3 +32,7 @@
 2019-06-21 11:06:14 TRACE UserRepositoryJDBC:68 - Incorrect username or password, please verify
 2019-06-21 11:06:55 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
 2019-06-21 11:06:57 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-21 12:45:44 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 12:45:45 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-21 12:59:49 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 12:59:50 TRACE UserRepositoryJDBC:62 - Login successfully
