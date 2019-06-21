@@ -49,7 +49,7 @@ public class BANK_ATM {
 			if (true) {
 				
 				
-				repository.createUser(new User(4,fName,lName,username,password));
+				repository.createUser(new User(fName,lName,username,password));
 			}
 				break;
 				

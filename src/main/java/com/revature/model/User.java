@@ -2,29 +2,20 @@ package com.revature.model;
 
 public class User {
 	
-	private long id;
+	
 	private String fisrtName;
 	private String lastName;
 	private String username;
 	private String password;
 	
 	public User() {}
- 
-	public User(long id,String firstName, String lastName,String username, String password ) {
-		this.id=id;
-		this.fisrtName=firstName;
-		this.lastName=lastName;
-		this.username=username;
-		this.password=password;
-		
-	}
 
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
+	public User(String fisrtName, String lastName, String username, String password) {
+		super();
+		this.fisrtName = fisrtName;
+		this.lastName = lastName;
+		this.username = username;
+		this.password = password;
 	}
 
 	public String getFisrtName() {
@@ -64,7 +55,6 @@ public class User {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((fisrtName == null) ? 0 : fisrtName.hashCode());
-		result = prime * result + (int) (id ^ (id >>> 32));
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((username == null) ? 0 : username.hashCode());
@@ -84,8 +74,6 @@ public class User {
 			if (other.fisrtName != null)
 				return false;
 		} else if (!fisrtName.equals(other.fisrtName))
-			return false;
-		if (id != other.id)
 			return false;
 		if (lastName == null) {
 			if (other.lastName != null)
@@ -107,9 +95,9 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", fisrtName=" + fisrtName + ", lastName=" + lastName + ", username=" + username
-				+ ", password=" + password + "]";
+		return "User [fisrtName=" + fisrtName + ", lastName=" + lastName + ", username=" + username + ", password="
+				+ password + "]";
 	}
-
-
+ 
+	
 }

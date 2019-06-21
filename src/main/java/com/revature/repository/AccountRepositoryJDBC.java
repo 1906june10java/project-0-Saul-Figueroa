@@ -14,7 +14,7 @@ public class AccountRepositoryJDBC implements AccountRepository{
 	private static final Logger LOGGER = Logger.getLogger(UserRepositoryJDBC.class);
 
 	@Override
-	public boolean createAccount(Account account) {
+	public boolean createAccount(Account account, long bankid, long userid) {
 	
 		LOGGER.trace("Entering, creating new account "+account);
 		
@@ -27,8 +27,8 @@ public class AccountRepositoryJDBC implements AccountRepository{
 			statement.setLong(++parameterIndex, account.getAccountId());
 			statement.setString(++parameterIndex, account.getName());
 			statement.setDouble(++parameterIndex, account.getBalance());
-			statement.setLong(++parameterIndex, account.getBankId().getId());
-			statement.setLong(++parameterIndex, account.getUserId().getId());
+			statement.setLong(++parameterIndex, bankid);
+			statement.setLong(++parameterIndex, userid);
 			
 			if (statement.executeUpdate() > 0) {
 				LOGGER.trace("Account created successfully "+account);

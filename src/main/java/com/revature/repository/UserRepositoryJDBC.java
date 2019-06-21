@@ -21,10 +21,10 @@ public class UserRepositoryJDBC implements UserRepository{
 		try(Connection connection = ConnectionUtil.getConnection())
 		{
 			int parameterIndex=0;
-			String sql="INSERT INTO USERS VALUES(?,?,?,?,?)";
+			String sql="INSERT INTO USERS VALUES(PK_USERS.NEXTVAL,?,?,?,?)";
 			
 			PreparedStatement statement = connection.prepareStatement(sql);
-			statement.setLong(++parameterIndex, user.getId());
+			
 			statement.setString(++parameterIndex, user.getFisrtName());
 			statement.setString(++parameterIndex, user.getLastName());
 			statement.setString(++parameterIndex, user.getUsername());
