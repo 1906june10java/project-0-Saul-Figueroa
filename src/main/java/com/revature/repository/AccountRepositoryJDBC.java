@@ -21,10 +21,9 @@ public class AccountRepositoryJDBC implements AccountRepository{
 		try(Connection connection = ConnectionUtil.getConnection()){
 			int parameterIndex =0;
 			
-			String sql=("INSERT INTO ACCOUNTS VALUES(?,?,?,?,?)");
+			String sql=("INSERT INTO ACCOUNTS VALUES(PK_USERS.NEXTVAL,?,?,?,?)");
 			PreparedStatement statement = connection.prepareStatement(sql);
-			
-			statement.setLong(++parameterIndex, account.getAccountId());
+
 			statement.setString(++parameterIndex, account.getName());
 			statement.setDouble(++parameterIndex, account.getBalance());
 			statement.setLong(++parameterIndex, bankid);
@@ -60,6 +59,8 @@ public class AccountRepositoryJDBC implements AccountRepository{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 
 	
 }

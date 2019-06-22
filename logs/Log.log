@@ -38,3 +38,21 @@
 2019-06-21 12:59:50 TRACE UserRepositoryJDBC:62 - Login successfully
 2019-06-21 13:01:33 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
 2019-06-21 13:01:34 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-21 14:57:42 TRACE UserRepositoryJDBC:19 - Entering, create new user User [fisrtName=ricardo, lastName=moreno, username=richmoreno, password=123]
+2019-06-21 14:57:46 TRACE UserRepositoryJDBC:34 - User inserted successfully
+2019-06-21 15:05:59 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 15:06:05 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-21 15:09:01 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 15:09:02 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-21 15:33:57 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters javier aguirre
+2019-06-21 15:33:59 TRACE UserRepositoryJDBC:70 - Incorrect username or password, please verify
+2019-06-21 15:35:10 TRACE UserRepositoryJDBC:19 - Entering, create new user User [fisrtName=javier, lastName=aguirre, username=javiaguirre123, password=123123]
+2019-06-21 15:35:11 TRACE UserRepositoryJDBC:34 - User inserted successfully
+2019-06-21 15:35:46 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 15:35:47 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-21 15:51:08 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 15:51:10 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 15:51:10 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-21 15:52:11 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 15:52:12 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-21 15:52:12 TRACE UserRepositoryJDBC:62 - Login successfully

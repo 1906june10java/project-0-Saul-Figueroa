@@ -59,9 +59,11 @@ public class BANK_ATM {
 				System.out.println("Enter password");
 				String pass = sc.next();
 				
+				long userid = repository.getUserID(userName, pass);
+				System.out.println("ID "+userid);
 				//repository.ValidateLogin(userName, pass);
 			if (repository.ValidateLogin(userName, pass)) {
-				callCreateAccount(userName,1);
+				callCreateAccount(userName,userid);
 			}
 				
 				
@@ -85,38 +87,40 @@ public class BANK_ATM {
 	{
 		Scanner sc = new Scanner(System.in);
 		int option=0;
-		
+		int bankID =1;
 		AccountRepositoryJDBC repositoryJDBC = new AccountRepositoryJDBC();
 		
-		System.out.println("Welcome "+username+" please enter your choice ");
-		System.out.println("1. Read Bank policies");
-		System.out.println("2. Create a new checking account");
-		System.out.println("3. Create a new savings account");
-		System.out.println("4. Go back");
-		System.out.println("5. Exit");
-		option = sc.nextInt();
-		
-		switch (option) {
-		case 1:
-			System.out.println("Hello, welcome to our bank");
-			break;
+		while(true) {
 			
-		case 2:
-			System.out.println("Creating a new checking account");
-			break;
+			System.out.println("Welcome "+username+" please enter your choice ");
+			System.out.println("1. Read Bank policies");
+			System.out.println("2. Create a new checking account");
+			System.out.println("3. Go back");
+			System.out.println("4. Exit");
+			option = sc.nextInt();
 			
-		case 3:
-			System.out.println("Creating a new savings account");
-			break;
+			switch (option) {
+			case 1:
+				System.out.println("Hello, welcome to our bank");
+				break;
+				
+			case 2:
+				System.out.println("Creating a new checking account");
+				System.out.println("Please enter the initial balance");
+				double balance = sc.nextDouble();
+				
+				repositoryJDBC.createAccount(new Account("Checking account",balance), bankID, id);
+				
+				break;
+	
 
-		default:
-			break;
+			default:
+				break;
+			}
+
+			
 		}
-		
-		
-		
-		
-		
+				
 		
 	}
 	

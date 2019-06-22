@@ -72,6 +72,39 @@ public class UserRepositoryJDBC implements UserRepository{
 		
 		return false;
 	}
+
+	@Override
+	public long getUserID(String username, String password) {
+		
+		LOGGER.trace("Entering, validate login with parameters "+username+" "+password);
+		int parameterIndex =0;
+		try(Connection connection = ConnectionUtil.getConnection())
+		{
+			String sql ="SELECT * FROM USERS WHERE U_USERNAME = ? and U_PIN =?";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			
+			statement.setString(++parameterIndex, username);
+			statement.setString(++parameterIndex, password);
+			
+			ResultSet result = statement.executeQuery();
+			
+			
+			
+			if (result.next()) {
+				//Return the ID to insert it in the account
+				long id =result.getLong(1);
+				return id;
+			}
+			
+			
+		} catch (SQLException e) {
+			LOGGER.trace("Incorrect username or password, please verify");
+		}
+		
+		return 0;
+	}
+
+	
 	
 	
 
