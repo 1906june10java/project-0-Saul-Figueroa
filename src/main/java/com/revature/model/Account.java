@@ -7,12 +7,8 @@ public class Account {
 	private String name;
 	private double balance;
 	
-	
-	
 	public Account() {}
-
-
-
+	
 	public Account(String name, double balance) {
 		super();
 		this.name = name;

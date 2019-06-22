@@ -87,7 +87,8 @@ public class BANK_ATM {
 	{
 		Scanner sc = new Scanner(System.in);
 		int option=0;
-		int bankID =1;
+		long bankID =1;
+		long userID = id;
 		AccountRepositoryJDBC repositoryJDBC = new AccountRepositoryJDBC();
 		
 		while(true) {
@@ -95,8 +96,12 @@ public class BANK_ATM {
 			System.out.println("Welcome "+username+" please enter your choice ");
 			System.out.println("1. Read Bank policies");
 			System.out.println("2. Create a new checking account");
-			System.out.println("3. Go back");
-			System.out.println("4. Exit");
+			System.out.println("3. Deposit");
+			System.out.println("4. Withdraw");
+			System.out.println("5. View balacne");
+			System.out.println("6. View transactions");
+			System.out.println("7. Go back");
+			System.out.println("8. Exit");
 			option = sc.nextInt();
 			
 			switch (option) {
@@ -110,9 +115,28 @@ public class BANK_ATM {
 				double balance = sc.nextDouble();
 				
 				repositoryJDBC.createAccount(new Account("Checking account",balance), bankID, id);
+	
 				
 				break;
+				
+			case 3:
+				System.out.println("Enter the amount of money to be deposited");
+				double deposit = sc.nextDouble();
+				repositoryJDBC.deposit(deposit, userID);
 	
+				break;
+				
+			case 4:
+				
+				System.out.println("Enter the amount of money to be withdrawn");
+				double withdraw = sc.nextDouble();
+				
+				repositoryJDBC.withdraw(withdraw, userID);
+				
+				 break;
+				
+			case 5:
+				repositoryJDBC.getBalance(userID);
 
 			default:
 				break;

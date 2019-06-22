@@ -56,3 +56,109 @@
 2019-06-21 15:52:11 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
 2019-06-21 15:52:12 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
 2019-06-21 15:52:12 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 11:52:03 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters LEOFLOR 123
+2019-06-22 11:52:04 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters LEOFLOR 123
+2019-06-22 11:52:04 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 11:52:23 TRACE UserRepositoryJDBC:19 - Entering, creating new account Account [name=Checking account, balance=400.0]
+2019-06-22 11:52:23 TRACE UserRepositoryJDBC:33 - Account created successfully Account [name=Checking account, balance=400.0]
+2019-06-22 13:02:42 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:02:43 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:02:43 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:03:44 TRACE UserRepositoryJDBC:19 - Entering, creating new account Account [name=Checking account, balance=500.0]
+2019-06-22 13:03:44 ERROR UserRepositoryJDBC:39 - Could not create account java.sql.SQLException: ORA-08002: sequence PK_ACCOUNTS.CURRVAL is not yet defined in this session
+ORA-06512: at "BANK_DB.ACCOUNT_INSERT_TRIGGER", line 2
+ORA-04088: error during execution of trigger 'BANK_DB.ACCOUNT_INSERT_TRIGGER'
+
+2019-06-22 13:09:23 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:09:25 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:09:25 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:09:51 TRACE UserRepositoryJDBC:48 - Entering, deposit
+2019-06-22 13:09:51 TRACE UserRepositoryJDBC:61 - 400.0 successfully deposited in your account
+2019-06-22 13:27:13 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:27:15 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:27:15 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:27:30 TRACE UserRepositoryJDBC:75 - Etering, withdraw
+2019-06-22 13:31:21 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:31:23 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:31:23 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:31:30 TRACE UserRepositoryJDBC:75 - Etering, withdraw
+2019-06-22 13:32:17 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:32:19 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:32:19 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:32:24 TRACE UserRepositoryJDBC:75 - Etering, withdraw
+2019-06-22 13:34:49 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:34:54 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:34:55 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:35:01 TRACE UserRepositoryJDBC:75 - Entering, withdraw
+2019-06-22 13:36:44 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:36:46 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:36:46 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:36:51 TRACE UserRepositoryJDBC:48 - Entering, deposit
+2019-06-22 13:38:37 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:38:39 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:38:39 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:38:44 TRACE UserRepositoryJDBC:48 - Entering, deposit
+2019-06-22 13:39:39 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:39:41 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:39:41 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:39:44 TRACE UserRepositoryJDBC:48 - Entering, deposit
+2019-06-22 13:43:08 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:43:09 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:43:10 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:43:14 TRACE UserRepositoryJDBC:48 - Entering, deposit
+2019-06-22 13:43:14 TRACE UserRepositoryJDBC:61 - 300.0 successfully deposited in your account
+2019-06-22 13:46:33 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:46:35 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:46:35 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:46:40 TRACE UserRepositoryJDBC:75 - Entering, withdraw
+2019-06-22 13:46:41 TRACE UserRepositoryJDBC:88 - 300.0 successfully withdrawn
+2019-06-22 13:47:17 TRACE UserRepositoryJDBC:75 - Entering, withdraw
+2019-06-22 13:47:18 TRACE UserRepositoryJDBC:88 - 100.0 successfully withdrawn
+2019-06-22 13:49:16 TRACE UserRepositoryJDBC:19 - Entering, creating new account Account [name=Checking account, balance=500.0]
+2019-06-22 13:49:17 ERROR UserRepositoryJDBC:39 - Could not create account java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (BANK_DB.PK_ACCOUNTS) violated
+
+2019-06-22 13:54:30 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:54:32 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 13:54:32 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 13:54:37 TRACE UserRepositoryJDBC:19 - Entering, creating new account Account [name=Checking account, balance=400.0]
+2019-06-22 13:54:38 TRACE UserRepositoryJDBC:33 - Account created successfully Account [name=Checking account, balance=400.0]
+2019-06-22 14:22:33 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 14:22:34 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 14:22:34 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 14:22:37 TRACE UserRepositoryJDBC:102 - Entering, view balance
+2019-06-22 14:30:04 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters sauleff 1357
+2019-06-22 14:30:07 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters sauleff 1357
+2019-06-22 14:30:08 TRACE UserRepositoryJDBC:70 - Incorrect username or password, please verify
+2019-06-22 14:30:28 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 14:30:29 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 14:30:29 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 14:30:42 TRACE UserRepositoryJDBC:102 - Entering, view balance
+2019-06-22 14:30:42 ERROR UserRepositoryJDBC:123 - Could not get balance java.sql.SQLException: Invalid column name
+2019-06-22 14:31:31 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 14:31:32 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 14:31:32 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 14:31:34 TRACE UserRepositoryJDBC:102 - Entering, view balance
+2019-06-22 15:00:33 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:00:34 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:00:35 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 15:00:38 TRACE UserRepositoryJDBC:102 - Entering, view balance
+2019-06-22 15:04:57 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:04:58 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:04:59 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 15:05:00 TRACE UserRepositoryJDBC:104 - Entering, view balance
+2019-06-22 15:05:40 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:05:40 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:05:41 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 15:05:42 TRACE UserRepositoryJDBC:104 - Entering, view balance
+2019-06-22 15:08:18 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:08:19 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:08:19 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 15:08:20 TRACE UserRepositoryJDBC:104 - Entering, view balance
+2019-06-22 15:10:22 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:10:23 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:10:23 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 15:10:28 TRACE UserRepositoryJDBC:104 - Entering, view balance
+2019-06-22 15:12:38 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:12:39 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-22 15:12:39 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-22 15:12:40 TRACE UserRepositoryJDBC:104 - Entering, view balance
