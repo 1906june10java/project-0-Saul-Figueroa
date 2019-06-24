@@ -10,7 +10,10 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import com.revature.model.Account;
+import com.revature.model.Transaction;
 import com.revature.util.ConnectionUtil;
+
+import oracle.net.aso.c;
 
 public class AccountRepositoryJDBC implements AccountRepository{
 	
@@ -128,6 +131,119 @@ public class AccountRepositoryJDBC implements AccountRepository{
 			LOGGER.error("Could not get balance "+e);
 		}
 		
+		
+		return null;
+	}
+
+
+	@Override
+	public boolean verifyAccount(long userid) {
+		LOGGER.trace("Entering validate account");
+		
+		try(Connection connection = ConnectionUtil.getConnection())
+		{
+			int parameterIndex=0;
+			String sql ="SELECT * FROM ACCOUNTS WHERE U_ID=?";
+			
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setLong(++parameterIndex, userid);
+			
+			ResultSet result = statement.executeQuery();
+			
+			if (result.next()) {
+				return true;
+			}
+			
+			
+		} catch (SQLException e) {
+			LOGGER.error("Account not found "+e);
+		}
+		
+		
+		
+		return false;
+	}
+
+	@Override
+	public long getAccountID(long userid) {
+		LOGGER.trace("Getting account id");
+		
+		try(Connection connection =ConnectionUtil.getConnection()){
+		
+			int parameterIndex=0;
+			String sql ="SELECT * FROM ACCOUNTS WHERE U_ID=?";
+			
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setLong(++parameterIndex, userid);
+			
+			ResultSet result = statement.executeQuery();
+			
+			if (result.next()) {
+				return result.getLong(1);
+			}
+					
+		} catch (SQLException e) {
+		LOGGER.error("Could not get the account id");
+		}
+		
+		return 0;
+	}
+
+	@Override
+	public boolean insertTransaction(Transaction transaction, long accountid, long type) {
+		
+LOGGER.trace("Entering, transaction");
+		
+		try(Connection connection = ConnectionUtil.getConnection())
+		{
+			int parameterIndex =0;
+			String sql ="INSERT INTO TRANSACTIONS VALUES(PK_TRANSACTIONS.NEXTVAL,?, SYSDATE, ?, ?, ? )";
+			
+			PreparedStatement statement = connection.prepareStatement(sql);
+			
+			statement.setDouble(++parameterIndex, transaction.getAmount());
+			statement.setString(++parameterIndex, transaction.getMemo());
+			statement.setLong(++parameterIndex, accountid);
+			statement.setLong(++parameterIndex, type);
+			
+			if (statement.executeUpdate() > 0) {
+				LOGGER.trace("Transaction inserted successfully");
+				return true;
+			}
+			
+		} catch (SQLException e) {
+			LOGGER.error("Could not make the transaction");
+		}
+		return false;
+	}
+
+	@Override
+	public List<Transaction> getTransactions(long accountid) {
+		
+		try(Connection connection = ConnectionUtil.getConnection())
+		{
+			int parameterIndex =0;
+			String sql ="SELECT * FROM TRANSACTIONS WHERE A_ID = ?";
+			
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setLong(++parameterIndex, accountid);
+			
+			ResultSet result = statement.executeQuery();
+			
+			List<Transaction> transactions = new ArrayList<>();
+			
+			while (result.next()) {
+				transactions.add(new Transaction(	
+						result.getDouble("T_AMOUNT"),
+						result.getString("T_DESCRIPTION")						
+						))			
+						;	
+			}	
+				return transactions;
+			
+		} catch (SQLException e) {
+			LOGGER.error("Transactions not found");
+		}
 		
 		return null;
 	}

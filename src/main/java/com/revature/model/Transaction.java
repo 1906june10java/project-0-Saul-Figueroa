@@ -5,19 +5,18 @@ import java.util.Date;
 public class Transaction {
 	
 	private double amount;
-	private Date timestamp;
 	private String memo;
+	private Date timestamp;
 	//The account in which the transaction was performed 
 	private Account inAccount;
 	
 	public Transaction() {}
-	
-	public Transaction(double amount, Date timestamp, String memo, Account inAccount) {
+
+	public Transaction(double amount, String memo) {
 		super();
 		this.amount = amount;
-		this.timestamp = timestamp;
 		this.memo = memo;
-		this.inAccount = inAccount;
+		
 	}
 
 	public double getAmount() {
@@ -28,20 +27,20 @@ public class Transaction {
 		this.amount = amount;
 	}
 
-	public Date getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(Date timestamp) {
-		this.timestamp = timestamp;
-	}
-
 	public String getMemo() {
 		return memo;
 	}
 
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public Date getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(Date timestamp) {
+		this.timestamp = timestamp;
 	}
 
 	public Account getInAccount() {
@@ -96,9 +95,12 @@ public class Transaction {
 
 	@Override
 	public String toString() {
-		return "Transaction [amount=" + amount + ", timestamp=" + timestamp + ", memo=" + memo + ", inAccount="
+		return "Transaction [amount=" + amount + ", memo=" + memo + ", timestamp=" + timestamp + ", inAccount="
 				+ inAccount + "]";
 	}
+	
+	
+	
 	
 	
 }
