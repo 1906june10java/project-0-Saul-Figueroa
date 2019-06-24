@@ -5,15 +5,22 @@ import java.util.Scanner;
 public class Validations {
 	
 	
-	public boolean verifyInt(Scanner number)
+	public boolean validateWithdraw(double amount, double balance)
 	{
-		
-		if (number.hasNextInt()) {
+		if (amount < balance) {
 			return true;
 		}
 		
 		return false;
+	}
+	
+	public boolean validateDeposit(double amount) {
 		
+		if (amount > 0) {
+			return true;
+		}
+		
+		return false;
 	}
 
 }

@@ -248,6 +248,33 @@ LOGGER.trace("Entering, transaction");
 		return null;
 	}
 
+	@Override
+	public double getJustBalance(long userid) {
+		LOGGER.trace("Getting balance");
+		
+		try(Connection connection = ConnectionUtil.getConnection())
+		{
+			int parameterIndex=0;
+			String sql="SELECT * FROM ACCOUNTS WHERE U_ID=?";
+			
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setLong(++parameterIndex, userid);
+			
+			ResultSet result = statement.executeQuery();
+			
+			if (result.next()) {
+				return result.getLong(3);
+			}
+			
+			
+		} catch (SQLException e) {
+		  LOGGER.error("Could not get the  balance");
+			
+		}
+		
+		return 0;
+	}
+
 	
 
 	

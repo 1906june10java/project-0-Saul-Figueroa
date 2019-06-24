@@ -157,15 +157,24 @@ public class BANK_ATM {
 					
 				case 4:
 					
+					double dbBalance=repositoryJDBC.getJustBalance(userID);
+					
 					if (repositoryJDBC.verifyAccount(userID) == true) {
+						
 						System.out.println("Enter the amount of money to be withdrawn");
 						double withdraw = sc.nextDouble();
 						
-						repositoryJDBC.withdraw(withdraw, userID);
-						repositoryJDBC.insertTransaction(new Transaction(withdraw, "New withdraw"), accountid, 1);
+						if (validation.validateWithdraw(withdraw, dbBalance)) {
+							
+							repositoryJDBC.withdraw(withdraw, userID);
+							repositoryJDBC.insertTransaction(new Transaction(withdraw, "New withdraw"), accountid, 1);
+							
+						} else {
+							System.err.println("Can not wothdraw more than "+dbBalance);
+						}	
 						
 					} else {
-						System.out.println("You have to create  an account");
+						System.err.println("You have to create  an account");
 
 					}
 					

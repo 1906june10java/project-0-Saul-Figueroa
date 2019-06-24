@@ -22,7 +22,8 @@ public interface AccountRepository {
 	//get transactions
 	public List<Transaction> getTransactions(long accountid);
 	
-	
+	//get only balance
+	public double getJustBalance(long userid);
 	
 
 }
