@@ -3,7 +3,8 @@ package com.revature.controller;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import com.revature.exception.NumNotValidException;
+import org.apache.log4j.Logger;
+
 import com.revature.model.Account;
 import com.revature.model.Transaction;
 import com.revature.model.User;
@@ -72,8 +73,7 @@ public class BANK_ATM {
 					if (repository.ValidateLogin(userName, pass)) {
 						callCreateAccount(userName,userid);
 					}
-						
-						
+										
 						break;
 						
 					case 3:
@@ -87,7 +87,7 @@ public class BANK_ATM {
 					
 					
 				} catch (InputMismatchException e) {
-					System.out.println("Please enter a number "+e);
+					System.err.println("Please enter a number ");
 					//throw new NumNotValidException("Please enter a number");
 					welcomeBank();
 				}
@@ -204,7 +204,7 @@ public class BANK_ATM {
 				}
 				
 			} catch (InputMismatchException e) {
-				System.out.println("Please enter a number");
+				System.err.println("Please enter a number");
 				callCreateAccount(username, userID);
 			}
 					

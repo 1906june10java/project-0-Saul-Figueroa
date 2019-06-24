@@ -12,6 +12,7 @@ public class Transaction {
 	
 	public Transaction() {}
 
+
 	public Transaction(double amount, String memo) {
 		super();
 		this.amount = amount;

@@ -290,3 +290,12 @@ ORA-04088: error during execution of trigger 'BANK_DB.ACCOUNT_INSERT_TRIGGER'
 2019-06-24 14:11:34 TRACE UserRepositoryJDBC:107 - Entering, view balance
 2019-06-24 14:11:43 TRACE UserRepositoryJDBC:253 - Getting balance
 2019-06-24 14:11:43 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-24 14:46:08 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-24 14:46:09 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-24 14:46:10 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-24 14:46:10 TRACE UserRepositoryJDBC:169 - Getting account id
+2019-06-24 15:29:37 TRACE BANK_ATM:82 - Thanks for your preference :)
+2019-06-24 16:12:12 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-24 16:12:13 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-24 16:12:26 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 135
+2019-06-24 16:12:27 TRACE UserRepositoryJDBC:70 - Incorrect username or password, please verify
