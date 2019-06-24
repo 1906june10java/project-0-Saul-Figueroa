@@ -1,5 +1,7 @@
 package com.revature;
 
+import com.revature.controller.BANK_ATM;
+
 /** 
  * Create an instance of your controller and launch your application.
  * 
@@ -11,6 +13,10 @@ package com.revature;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		//Calling the ATM class, static way
+		BANK_ATM.welcomeBank();
+		
 
 	}
 }

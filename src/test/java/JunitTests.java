@@ -8,6 +8,7 @@ import com.revature.service.Validations;
 
 public class JunitTests {
 	
+	
 	private final static Validations validation = new Validations();
 	private final UserRepositoryJDBC repository = new UserRepositoryJDBC();
 	

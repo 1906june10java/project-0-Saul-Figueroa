@@ -14,11 +14,6 @@ import com.revature.service.Validations;
 
 public class BANK_ATM {
 	
-	public static void main(String[] args) {
-		welcomeBank();
-
-		
-	}
 	
 	public static void welcomeBank()
 	{
