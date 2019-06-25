@@ -1,6 +1,7 @@
 package com.revature.controller;
 
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
@@ -29,6 +30,7 @@ public class BANK_ATM {
 			
 				try {
 
+					System.err.println("******************************************************");
 					System.out.println("Welcome to Figueroa's bank, please enter your choice");
 					System.out.println("1. Sign up");
 					System.out.println("2. Log in");
@@ -109,6 +111,7 @@ public class BANK_ATM {
 		while(true) {
 			
 			try {
+				System.err.println("*************************************************");
 				System.out.println("Welcome "+username+" please enter your choice ");
 				System.out.println("1. Read Bank policies");
 				System.out.println("2. Create a new account");
@@ -139,9 +142,16 @@ public class BANK_ATM {
 						System.out.println("Enter the amount of money to be deposited");
 						double deposit = sc.nextDouble();
 						
-						repositoryJDBC.deposit(deposit, userID);
-						//inserting transaction
-						repositoryJDBC.insertTransaction(new Transaction(deposit, "New deposit"), accountid, 1);
+						if (validation.validateDeposit(deposit) == true) {
+							repositoryJDBC.deposit(deposit, userID);
+							//inserting transaction
+							repositoryJDBC.insertTransaction(new Transaction(deposit, "New deposit"), accountid, 1);	
+							
+						}
+						else {
+							System.err.println("Please enter a positive value");
+						}
+						
 						
 					} else {
 						System.err.println("You have to create an account");
@@ -169,7 +179,7 @@ public class BANK_ATM {
 						}	
 						
 					} else {
-						System.err.println("You have to create  an account");
+						System.err.println("You have to create an account");
 
 					}
 					
@@ -183,6 +193,7 @@ public class BANK_ATM {
 					
 				case 6:
 					System.out.println(repositoryJDBC.getTransactions(accountid));
+					
 					break;
 					
 				case 7:

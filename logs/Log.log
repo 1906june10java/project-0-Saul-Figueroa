@@ -301,3 +301,97 @@ ORA-04088: error during execution of trigger 'BANK_DB.ACCOUNT_INSERT_TRIGGER'
 2019-06-24 16:12:27 TRACE UserRepositoryJDBC:70 - Incorrect username or password, please verify
 2019-06-24 16:41:16 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
 2019-06-24 16:41:17 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-24 20:35:11 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-24 20:35:13 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-24 20:35:33 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEF 1357
+2019-06-24 20:35:35 TRACE UserRepositoryJDBC:70 - Incorrect username or password, please verify
+2019-06-24 20:35:48 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-24 20:35:49 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-25 09:17:53 TRACE UserRepositoryJDBC:19 - Entering, create new user User [fisrtName=Saul, lastName=Figueroa, username=SAULEFF, password=1357]
+2019-06-25 09:17:55 TRACE UserRepositoryJDBC:34 - User inserted successfully
+2019-06-25 09:18:26 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:18:27 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:18:27 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-25 09:18:27 TRACE UserRepositoryJDBC:169 - Getting account id
+2019-06-25 09:18:32 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:18:46 TRACE UserRepositoryJDBC:253 - Getting balance
+2019-06-25 09:18:46 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:19:32 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:19:37 TRACE UserRepositoryJDBC:253 - Getting balance
+2019-06-25 09:19:37 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:20:26 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:20:27 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:20:27 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-25 09:20:27 TRACE UserRepositoryJDBC:169 - Getting account id
+2019-06-25 09:21:22 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:21:32 TRACE UserRepositoryJDBC:25 - Entering, creating new account Account [name=Checking account, balance=300.0]
+2019-06-25 09:21:32 TRACE UserRepositoryJDBC:39 - Account created successfully Account [name=Checking account, balance=300.0]
+2019-06-25 09:23:06 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:23:08 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:23:08 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-25 09:23:08 TRACE UserRepositoryJDBC:169 - Getting account id
+2019-06-25 09:23:34 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:23:36 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:23:36 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-25 09:23:36 TRACE UserRepositoryJDBC:169 - Getting account id
+2019-06-25 09:24:00 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:24:01 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:24:01 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-25 09:24:01 TRACE UserRepositoryJDBC:169 - Getting account id
+2019-06-25 09:24:30 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:24:40 TRACE UserRepositoryJDBC:54 - Entering, deposit
+2019-06-25 09:24:41 TRACE UserRepositoryJDBC:67 - -50.0 successfully deposited in your account
+2019-06-25 09:24:41 TRACE UserRepositoryJDBC:195 - Entering, transaction
+2019-06-25 09:24:41 TRACE UserRepositoryJDBC:210 - Transaction inserted successfully
+2019-06-25 09:27:36 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:27:37 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:27:38 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-25 09:27:38 TRACE UserRepositoryJDBC:169 - Getting account id
+2019-06-25 09:28:25 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:28:55 TRACE UserRepositoryJDBC:253 - Getting balance
+2019-06-25 09:28:55 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:31:16 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:31:18 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:31:18 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-25 09:31:18 TRACE UserRepositoryJDBC:169 - Getting account id
+2019-06-25 09:33:12 TRACE UserRepositoryJDBC:79 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:33:14 TRACE UserRepositoryJDBC:47 - Entering, validate login with parameters SAULEFF 1357
+2019-06-25 09:33:14 TRACE UserRepositoryJDBC:62 - Login successfully
+2019-06-25 09:33:14 TRACE UserRepositoryJDBC:169 - Getting account id
+2019-06-25 09:34:05 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:34:10 TRACE UserRepositoryJDBC:54 - Entering, deposit
+2019-06-25 09:34:10 TRACE UserRepositoryJDBC:67 - 500.0 successfully deposited in your account
+2019-06-25 09:34:10 TRACE UserRepositoryJDBC:195 - Entering, transaction
+2019-06-25 09:34:10 TRACE UserRepositoryJDBC:210 - Transaction inserted successfully
+2019-06-25 09:34:47 TRACE UserRepositoryJDBC:107 - Entering, view balance
+2019-06-25 09:34:57 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:34:59 TRACE UserRepositoryJDBC:54 - Entering, deposit
+2019-06-25 09:35:00 TRACE UserRepositoryJDBC:67 - 250.0 successfully deposited in your account
+2019-06-25 09:35:00 TRACE UserRepositoryJDBC:195 - Entering, transaction
+2019-06-25 09:35:00 TRACE UserRepositoryJDBC:210 - Transaction inserted successfully
+2019-06-25 09:35:07 TRACE UserRepositoryJDBC:107 - Entering, view balance
+2019-06-25 09:35:12 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:35:15 TRACE UserRepositoryJDBC:54 - Entering, deposit
+2019-06-25 09:35:15 TRACE UserRepositoryJDBC:67 - 400.0 successfully deposited in your account
+2019-06-25 09:35:15 TRACE UserRepositoryJDBC:195 - Entering, transaction
+2019-06-25 09:35:15 TRACE UserRepositoryJDBC:210 - Transaction inserted successfully
+2019-06-25 09:35:17 TRACE UserRepositoryJDBC:253 - Getting balance
+2019-06-25 09:35:17 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:35:19 TRACE UserRepositoryJDBC:81 - Entering, withdraw
+2019-06-25 09:35:20 TRACE UserRepositoryJDBC:94 - 200.0 successfully withdrawn
+2019-06-25 09:35:20 TRACE UserRepositoryJDBC:195 - Entering, transaction
+2019-06-25 09:35:20 TRACE UserRepositoryJDBC:210 - Transaction inserted successfully
+2019-06-25 09:35:23 TRACE UserRepositoryJDBC:253 - Getting balance
+2019-06-25 09:35:24 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:35:29 TRACE UserRepositoryJDBC:81 - Entering, withdraw
+2019-06-25 09:35:29 TRACE UserRepositoryJDBC:94 - 120.5 successfully withdrawn
+2019-06-25 09:35:29 TRACE UserRepositoryJDBC:195 - Entering, transaction
+2019-06-25 09:35:30 TRACE UserRepositoryJDBC:210 - Transaction inserted successfully
+2019-06-25 09:35:38 TRACE UserRepositoryJDBC:141 - Entering validate account
+2019-06-25 09:35:43 TRACE UserRepositoryJDBC:54 - Entering, deposit
+2019-06-25 09:35:43 TRACE UserRepositoryJDBC:67 - 325.5 successfully deposited in your account
+2019-06-25 09:35:43 TRACE UserRepositoryJDBC:195 - Entering, transaction
+2019-06-25 09:35:43 TRACE UserRepositoryJDBC:210 - Transaction inserted successfully
+2019-06-25 09:35:46 TRACE UserRepositoryJDBC:107 - Entering, view balance
+2019-06-25 09:35:55 TRACE UserRepositoryJDBC:169 - Getting account id
+2019-06-25 09:36:10 TRACE UserRepositoryJDBC:107 - Entering, view balance
