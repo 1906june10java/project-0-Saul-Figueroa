@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
+import com.revature.exception.NegativeDepositException;
+import com.revature.exception.OutOfBalanceException;
 import com.revature.model.Account;
 import com.revature.model.Transaction;
 import com.revature.model.User;
@@ -149,7 +151,8 @@ public class BANK_ATM {
 							
 						}
 						else {
-							System.err.println("Please enter a positive value");
+							//System.err.println("Please enter a positive value");
+							throw new NegativeDepositException();
 						}
 						
 						
@@ -175,7 +178,8 @@ public class BANK_ATM {
 							repositoryJDBC.insertTransaction(new Transaction(withdraw, "New withdraw"), accountid, 1);
 							
 						} else {
-							System.err.println("Can not wothdraw more than "+dbBalance);
+							//System.err.println("Can not wothdraw more than "+dbBalance);
+							throw new OutOfBalanceException(dbBalance);
 						}	
 						
 					} else {
